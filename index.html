@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Network Packet Capture and Analyzer</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #d1d5db;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tech span {
+            background: #e5e7eb;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .flow {
+            background: #111827;
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        pre {
+            background: #111827;
+            color: #e5e7eb;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+
+        .github-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: #111827;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .github-button:hover {
+            background: #374151;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #111827;
+            color: #d1d5db;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Network Packet Capture and Analyzer</h1>
+        <p>Python & Scapy Based Network Traffic Analysis Project</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Overview -->
+        <div class="card">
+            <h2>📌 Overview</h2>
+
+            <p>
+                This project is a Python-based Network Packet Capture and
+                Analysis tool developed using the Scapy library. It captures
+                live network packets and displays important information about
+                network communication.
+            </p>
+
+            <p>
+                The project helps in understanding how data flows between
+                source and destination systems and provides practical
+                knowledge about network protocols and packet structures.
+            </p>
+        </div>
+
+        <!-- Objective -->
+        <div class="card">
+            <h2>🎯 Objective</h2>
+
+            <ul>
+                <li>Capture live network traffic packets.</li>
+                <li>Analyze captured packet structures.</li>
+                <li>Identify Source and Destination IP addresses.</li>
+                <li>Detect TCP, UDP and ICMP protocols.</li>
+                <li>Display Source and Destination ports.</li>
+                <li>Analyze packet payloads.</li>
+                <li>Understand basic network data flow.</li>
+            </ul>
+        </div>
+
+        <!-- Technologies -->
+        <div class="card">
+            <h2>🛠️ Technologies Used</h2>
+
+            <div class="tech">
+                <span>Python</span>
+                <span>Scapy</span>
+                <span>TCP/IP</span>
+                <span>Network Protocols</span>
+                <span>Packet Analysis</span>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="card">
+            <h2>⚡ Features</h2>
+
+            <ul>
+                <li>Live network packet capture.</li>
+                <li>Source IP identification.</li>
+                <li>Destination IP identification.</li>
+                <li>TCP, UDP and ICMP protocol detection.</li>
+                <li>Source and Destination port detection.</li>
+                <li>Payload analysis.</li>
+                <li>Detection of binary or encrypted payload data.</li>
+            </ul>
+        </div>
+
+        <!-- Working -->
+        <div class="card">
+            <h2>🔄 How It Works</h2>
+
+            <div class="flow">
+                Network Traffic
+                ↓
+                Packet Capture using Scapy
+                ↓
+                Packet Analysis
+                ↓
+                IP Identification
+                ↓
+                Protocol Detection
+                ↓
+                Port Analysis
+                ↓
+                Payload Analysis
+                ↓
+                Display Results
+            </div>
+        </div>
+
+        <!-- Installation -->
+        <div class="card">
+            <h2>📦 Installation</h2>
+
+            <p>
+                Install the Scapy library using:
+            </p>
+
+            <pre>pip install scapy</pre>
+        </div>
+
+        <!-- How to Run -->
+        <div class="card">
+            <h2>▶️ How to Run</h2>
+
+            <p>
+                Run the Python program using:
+            </p>
+
+            <pre>python task1.py</pre>
+
+            <p>
+                On Windows, administrator privileges may be required for
+                network packet capturing.
+            </p>
+        </div>
+
+        <!-- Sample Output -->
+        <div class="card">
+            <h2>📊 Sample Output</h2>
+
+            <pre>
+============================================================
+
+Source IP       : 14.102.231.207
+Destination IP  : 10.167.88.159
+Protocol        : TCP
+Source Port     : 80
+Destination Port: 61232
+Payload         : Binary / Encrypted Data
+
+============================================================
+
+Packet capture completed successfully!
+            </pre>
+        </div>
+
+        <!-- Understanding -->
+        <div class="card">
+            <h2>🧠 What I Learned</h2>
+
+            <ul>
+                <li>How network packets are captured.</li>
+                <li>How Source and Destination IPs work.</li>
+                <li>Basic TCP, UDP and ICMP protocols.</li>
+                <li>The role of port numbers in network communication.</li>
+                <li>How packet payloads are represented.</li>
+                <li>Why some payloads appear as binary or encrypted data.</li>
+                <li>Practical usage of Scapy for network analysis.</li>
+            </ul>
+        </div>
+
+        <!-- Project Files -->
+        <div class="card">
+            <h2>📁 Project Files</h2>
+
+            <ul>
+                <li><strong>task1.py</strong> – Network packet capture and analysis program.</li>
+                <li><strong>README.md</strong> – Complete project documentation.</li>
+                <li><strong>index.html</strong> – Project presentation webpage.</li>
+            </ul>
+
+            <a class="github-button"
+               href="https://github.com/"
+               target="_blank">
+                View GitHub Repository
+            </a>
+        </div>
+
+        <!-- Note -->
+        <div class="card">
+            <h2>⚠️ Note</h2>
+
+            <p>
+                This project is developed for educational purposes.
+                Network packet capturing should only be performed on systems
+                and networks where you have permission to monitor traffic.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Network Packet Capture and Analyzer</p>
+        <p>Developed by Poornima | Cyber Security Student</p>
+    </footer>
+
+</body>
+</html>
